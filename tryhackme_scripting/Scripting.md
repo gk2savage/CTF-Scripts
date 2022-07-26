@@ -1,24 +1,14 @@
-## Python scripting challenge from tryhackme.com 
-Found here: https://tryhackme.com/room/scripting
+## TryHackMe:Scripting room
+Room Link: https://tryhackme.com/room/scripting
 
 ### Task 1: Base64
 
-Pretty straight forward fist task:
-- Read the file in `msg` variable
-- Decode 50 times with a basic `for` loop
-
 ```python
-import base64
-
-#Open file
-with open('b64.txt') as f:
-    msg = f.read()
-
-#Decode 50 times
-for _ in range(50):
-    msg = base64.b64decode(msg)
-
-print(f"The flag is: {msg.decode('utf8')}")
+from base64 import *
+flag = open("b64.txt", 'r').read()
+for i in range(50):
+    flag = b64decode(flag)
+print("The Flag: ", flag.decode())
 ```
 
 ### Task 2: Gotta Catch em All 
