@@ -18,7 +18,7 @@ print("The Flag: ", flag.decode())
 
 ### Task 2: Gotta Catch em All 
 
-For me this was the most time consuming. The hardest part was getting the data in a usable format:
+Approach:
 - Attempt to connect to the server until the port is live
 - Once connected, request the data, in this case operation, number, next port 
 - Receive the data and assign it so we can use it
@@ -105,7 +105,7 @@ Run with `python3 webClient.py <ip>`
 
 ### Task 3: Encrypted Server Chit Chat 
 
-Had to visit the docs a few times for this one:
+Approach:
 - Connect to server via UDP to get the initial instructions
 - Connect again to receive the next set 
 - Store key and iv (Hard coded for ease)
