@@ -3,6 +3,11 @@ Room Link: https://tryhackme.com/room/scripting
 
 ### Task 1: Base64
 
+Approach:
+- read input from the file
+- use function to decode the file
+- do process in a loop
+
 ```python
 from base64 import *
 flag = open("b64.txt", 'r').read()
